@@ -1,0 +1,107 @@
+body {
+    background-color: #ffc800;
+ font-family: 'Bauhaus 93', sans-serif;
+}
+/* Style for the custom video player container */
+.custom-video {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style for the video player itself */
+#custom-video-player {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the custom controls container */
+.custom-controls {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0095ff;
+    margin-bottom: 20px; /* Add margin to create space for the time bar */
+}
+
+/* Style for the play/pause button and full-screen button container */
+#custom-buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the play/pause button */
+#custom-play-pause-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#custom-play-pause-button:hover {
+    background-color: #45a049;
+}
+
+/* Style for the full-screen logo */
+#custom-fullscreen-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1; /* Ensure it's above the time bar */
+    margin-left: auto; /* Move the full-screen button to the extreme right */
+}
+
+#custom-fullscreen-button img {
+    width: 24px; /* Adjust the size of the logo as needed */
+}
+
+#custom-fullscreen-button:hover {
+    background-color: #555;
+}
+
+/* Style for the time bar */
+.custom-time-bar {
+    flex-grow: 1;
+    height: 10px; /* Adjust the height as needed */
+    background-color: #555;
+    position: relative;
+    z-index: 0; /* Ensure it's behind the full-screen button */
+}
+
+#custom-progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0;
+    transition: width 0.1s;
+}
+
+header {
+    text-align: center;
+    color: #007904;
+}
+
+/* Center text within the main content */
+main {
+    text-align: center;
+    color: #ff5900;
+}
+body {
+    text-align: center;
+    color: #ddff00;
+}
+
+part {
+    text-align: center;
+    color: #0095ff;
+}
+/* Center text within the footer */
+footer {
+    text-align: center;
+    color: #4CAF50;
+}
+
